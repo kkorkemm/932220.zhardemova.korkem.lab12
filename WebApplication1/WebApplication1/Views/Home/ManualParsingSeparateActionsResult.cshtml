@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Manual Parsing in Separate Actions Result";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.Result != null)
+{
+    <h3>Result: @ViewBag.Result</h3>
+}
+
+@if (ViewBag.Error != null)
+{
+    <h3 style="color: red;">Error: @ViewBag.Error</h3>
+}
