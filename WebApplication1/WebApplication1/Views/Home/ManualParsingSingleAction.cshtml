@@ -15,13 +15,3 @@
     <input type="number" name="Number2" required />
     <button type="submit">Submit</button>
 </form>
-
-@if (ViewBag.Result != null)
-{
-    <h3>Result: @ViewBag.Result</h3>
-}
-
-@if (ViewBag.Error != null)
-{
-    <h3 style="color: red;">Error: @ViewBag.Error</h3>
-}

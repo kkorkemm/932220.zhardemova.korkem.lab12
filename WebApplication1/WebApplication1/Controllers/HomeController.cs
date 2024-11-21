@@ -36,7 +36,7 @@ public class HomeController : Controller
             ViewBag.Error = ex.Message;
         }
 
-        return View();
+        return View("ManualParsingSingleActionResult");
     }
 
     public IActionResult ManualParsingSeparateActions()
@@ -78,7 +78,7 @@ public class HomeController : Controller
             ViewBag.Error = ex.Message;
         }
 
-        return View();
+        return View("ModelBindingParametersResult");
     }
 
     public IActionResult ModelBindingSeparateModel()
